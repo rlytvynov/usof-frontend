@@ -1,0 +1,99 @@
+.login {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.loginForm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login h1 {
+    color: #023047;
+    margin-bottom : 50px
+}
+
+.inputLogin {
+    width: 100%;
+    font-size: 20px;
+    color: #023047;
+    margin-bottom: 10px;
+}
+
+.inputLogin.toRegister,
+.inputLogin.toForget {
+    color: #848484;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.inputLogin.toRegister a {
+    color: #023047;
+}
+
+.inputLogin input[type=email],
+.inputLogin input[type=password],
+.inputLogin input[type=text]
+{
+    width: 270px;
+    margin-left: 10px;
+    padding: 13px;
+    border: none;
+    background: #ECECEC;
+    border-radius: 11px; 
+
+}
+.loginError {
+    margin: 0px 0px 10px 0px;
+    color: var(--secondaryColor);
+}
+
+.inputLogin input[type=submit] {
+    width: 100%;
+    background: #023047;
+    border: none;
+    border-radius: 14px;
+    padding: 12px;
+    color: var(--textColor);
+    font-weight: 700;
+}
+
+.inputLogin a {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #848484;
+}
+
+.inputLogin a:hover {
+    font-weight: 700;
+}
+
+.registered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registered h1 {
+    text-align: center;
+}
+
+.registered svg {
+    font-size: 160px;
+    color: var(--mainColor);
+}
+
+@media only screen and (max-width: 820px) {
+    .inputLogin svg {
+        font-size: 20px;
+    }
+}

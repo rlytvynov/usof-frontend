@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+:root {
+	--mainColor: #023047;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #FF564B;
+	--textColor: #eee;
+}
+
+.main {
+    max-width: 1100px;
+    margin: 60px auto; 
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.profilePhoto {
+    width: 20px;
+    height: 20px;
+    background: gainsboro;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+p {
+    color: var(--mainColor);
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .main {
+        max-width: 800px;
+        margin: 60px auto; 
+    } 
+
+}
+
+@media only screen and (max-width: 820px) {
+
+    .main {
+        max-width: 375px;
+        margin: 60px auto; 
+    } 
+
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+      }
+    
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@-moz-keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+      }
+    
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5, 0.5);
+      }
+    
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}

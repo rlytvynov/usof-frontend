@@ -1,0 +1,189 @@
+.account_block {
+    width:initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account_block .account {
+    width: 100%;
+}
+
+.account_block .account .go_back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--mainColor);
+}
+
+.account_block .account .go_back h1 {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.account_block .account .go_back {
+    margin-bottom: 50px;
+}
+
+.account_block .account .account_info {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+.account_block .account .account_info .user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account_block .account .account_info .user_info img {
+    width: 180px;
+    height: 180px;
+}
+
+.account_block .account .account_info .user_posts{
+    width: 800px;
+}
+
+.settings {
+    width: 160px;
+    line-height: 30px;
+    display: block;
+    background: var(--mainColor);
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--textColor);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.upload_photo {
+
+    width: 100%;
+    line-height: 30px;
+    display: block;
+    border: none;
+    background: none;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--mainColor);
+    text-align: center;
+    font-weight: 700;
+  
+}
+
+.upload_photo:hover,
+.settings:hover {
+    cursor: pointer;
+}
+
+.update_profile.unactive {
+    display: none;
+}
+
+.update_profile.active {
+    position: absolute;
+    display: block;
+    backdrop-filter: blur(20px);
+    min-height: 100vh;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.update_profile_center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 360px;
+
+    background: whitesmoke;
+    padding: 30px;
+    border: none;
+    border-radius: 15px;
+
+    box-shadow: 10px 10px #888888;
+}
+
+.crossButton {
+    align-self: flex-end;
+    margin-bottom: 10px;
+
+}
+
+.crossButton:hover {
+    cursor: pointer;
+}
+
+.empty_account {
+    margin: 150px 0px;
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.empty_account h1 {
+    margin-bottom: 50px;
+}
+
+.empty_account a {
+    background: var(--mainColor);
+	border: none;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-weight: 700;
+	color: var(--textColor);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .account_block .account .account_info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .account_block .account .account_info .user_posts{
+        width: 500px;
+    }
+
+    .account_block .account .account_info .user_info {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 820px) {
+
+    .account_block .account .account_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account_block .account .account_info .user_posts{
+        width: 400px;
+    }
+
+
+    .post__additional-info {
+        width: 25% !important;
+    }
+
+    .post__info {
+        width: 75% !important;
+    }
+
+}
